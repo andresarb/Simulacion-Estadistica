@@ -8,7 +8,7 @@ F<-function(x){ exp(-x) }
 # f función objetivo
 # u tamaño del vector de aproximación
 
-g<-function(f,u,a,b){
+limdef<-function(f,u,a,b){
   v<-runif(u)
   cambio<-(v*(b-a)+a)
   x<-f(cambio)
