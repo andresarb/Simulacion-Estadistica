@@ -1,0 +1,18 @@
+# FUNCIÓN PARA ESTIMAR UNA INTEGRAL DEFINIDA FINITA CON INTEGRACIÓN MONTE CARLO
+
+# Definción de la función objetivo
+F<-function(x){ exp(-x) }
+
+# a límite inferior de integración
+# b límite superior de integración
+# f función objetivo
+# u tamaño del vector de aproximación
+
+g<-function(f,u,a,b){
+  v<-runif(u)
+  cambio<-(v*(b-a)+a)
+  x<-f(cambio)
+  valor<-mean(x)*(b-a)
+  cat("Valor calculado:", valor)
+  cat(" con un error de:", integrate(f,a,b)$value-valor)
+}
