@@ -15,4 +15,5 @@ g<-function(f,u,a,b){
   valor<-mean(x)*(b-a)
   cat("Valor calculado:", valor)
   cat(" con un error de:", integrate(f,a,b)$value-valor)
+  return(x)
 }
