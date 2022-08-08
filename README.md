@@ -2,7 +2,7 @@
 
 ---
 ## Generación de Variables Aleatorias
-1. Transformada Inversa para Disrtibución Discreta Uniforme
+1. Transformada Inversa para Distribución Discreta Uniforme
 
   
 ## Métodos Monte Carlo
