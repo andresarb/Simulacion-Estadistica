@@ -7,6 +7,6 @@
   
 ## Métodos Monte Carlo
 1. Integración Monte Carlo en límites Finitos
-  Convergencia
+  -Convergencia
 2. Integración Monte Carlo en límites Infinitos
-  Convergencia
+  -Convergencia
