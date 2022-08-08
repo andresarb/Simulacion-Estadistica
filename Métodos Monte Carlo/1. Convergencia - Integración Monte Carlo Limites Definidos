@@ -1,0 +1,10 @@
+# FUNCIÓN PARA SIMULAR LA CONVERGENCIA DE INTEGRAL DEFINIDA FINITA CON INTEGRACIÓN MONTE CARLO
+#limdef definida previamente
+
+graf<-function(u){
+  X<-numeric(u)
+  for(i in 1:u){
+    X[i]<-limdef(I,i,2,4)
+    }
+  plot(X, type = "l")
+}
