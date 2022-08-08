@@ -1,0 +1,17 @@
+# FUNCIÓN PARA ESTIMAR UNA INTEGRAL DEFINIDA INFINITA CON INTEGRACIÓN MONTE CARLO
+
+#Definción de la función
+I<-function(x){
+  exp((-2)*x)
+}
+
+#f funcion objetivo
+#u tamaño del vector
+Intinf<-function(f,u){
+  v<-runif(u)
+  cambio<-((1/v)-1)
+  x<-(f(cambio))/(v^2)
+  valor<-mean(x)
+  
+  return(valor)
+}
