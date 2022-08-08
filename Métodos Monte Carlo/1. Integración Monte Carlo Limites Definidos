@@ -8,7 +8,7 @@ F<-function(x){ exp(-x) }
 # f función objetivo
 # u tamaño del vector de aproximación
 
-limdef<-function(f,u,a,b){
+Intfin<-function(f,u,a,b){
   v<-runif(u,a,b)
   x<-f(v)*(b-a)
   valor<-mean(x)
