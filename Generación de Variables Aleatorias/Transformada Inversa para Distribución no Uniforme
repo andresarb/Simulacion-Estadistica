@@ -1,0 +1,28 @@
+# FUNCIÓN PARA GENERAR UN CONJUNTO DE DATOS CON DISTRIBUCIÓN NO UNIFORME DISCRETA
+# Método de Transformación Inversa
+# Ejemplo Para V.A Discreta no uniforme en {1,2,3,4,5} con distribucion:
+# p[1]=p1
+# p[2]=p2
+# p[3]=p3
+# p[4]=p4
+
+# n: Número de datos que desea generar
+
+f<-function(n,p1,p2,p3,p4){
+  x<-numeric(n)
+  for(i in 1:n){
+    u<-runif(1)
+    if(u<p1){
+      x[i]<-1
+    }else if(u<p1+p2){
+      x[i]<-2
+    }else if(u<p1+p2+p3){
+      x[i]<-3
+    }else if(u<p1+p2+p3+p4){
+      x[i]<-4
+    }else{
+      x[i]<-5
+    }
+  }
+  return(x)
+}
